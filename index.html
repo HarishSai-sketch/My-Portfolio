@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="typewriter"></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Web Developer</h2>
+    <p>Aspiring Software Developer with hands-on experience in full-stack web development using Python, Django, React, and JavaScript.
+Proficient in building scalable applications with RESTful APIs, database integration (MySQL, SQLite), and real-time IoT systems
+using ESP8266 and sensor networks.Strong understanding of core CS concepts including Data Structures, Operating Systems, and
+Computer Networks. Committed to writing clean, maintainable code and continuously expanding technical expertise.</p>
+  </section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    
+    <div class="project-card">
+      <h3>Online Diary Application</h3>
+      <p><strong>Tech Stack:</strong> Django, HTML, CSS, JavaScript</p>
+      <ul>
+        <li>Secure full-stack diary app with create/edit/delete entries</li>
+        <li>User auth via Django’s built-in system</li>
+        <li>Integrated Django templates for seamless UX</li>
+        <li>Persistent storage with SQLite</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Bus Seating Capacity Monitoring</h3>
+      <p><strong>Tech Stack:</strong> ESP8266, IR Sensors, Blynk App</p>
+      <ul>
+        <li>Monitors real-time bus seat occupancy</li>
+        <li>Sends data to cloud via Wi-Fi</li>
+        <li>Displays live seating on mobile app</li>
+        <li>Sensor layout optimized for accuracy</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Harish Sai</p>
+  </footer>
+
+</body>
+</html>
